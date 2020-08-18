@@ -58,4 +58,3 @@ function [x,y] = fastLP(A,c,b,K);
 
 
 
-
