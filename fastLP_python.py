@@ -2,8 +2,8 @@ import numpy as np
 from numpy import sqrt
 
 A = [[50, 30, 30],[2, 3, 2],[1, 1, 1]]
-c = [-30000, 15000, -16000]
-b = [2000, 700, 30]
+b = [-20000, 15000, -16000]
+c = [2000, 700, 30]
 K = 1
 
 m = len(A)
@@ -23,7 +23,8 @@ y = np.zeros((m, 1))
 print(y)
 
 br = K*b
-
+print(br)
+print("-----------------------")
 for k in range(K):
 	p = np.random.permutation(n)
 	print(p)
@@ -41,8 +42,8 @@ for k in range(K):
 		y = np.maximum(0, y+step*(xk*aa-d))
 		print(y)
 
-		if(min(br - xk*aa)>= 0):
-			br = br - xk*aa
-			x[ii-1] = x[ii-1] + xk
+		#if(min(br - xk*aa)>= 0):
+		#	br = br - xk*aa
+		#	x[ii-1] = x[ii-1] + xk
 
 
