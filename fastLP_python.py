@@ -26,24 +26,32 @@ br = K*b
 print(br)
 print("-----------------------")
 for k in range(K):
+	print(k)
+	print(K)
 	p = np.random.permutation(n)
+	p += 1
 	print(p)
 	for i in range(n):
+		print('************************')
 		ii = p[i-1]
-		print(ii)
+		print("ii-----", ii)
 		A = np.array(A)
 		aa = A[:,ii-1]
+		print("aa-----", aa)
 
 		xk = (np.sign(c[ii-1] - np.transpose(aa)*y)+1)/2
-		print(y)
+		print("XK NOW__________")
 		print(xk)
-		print("-------------")
-		print(y+step*(xk*aa-d))
 		y = np.maximum(0, y+step*(xk*aa-d))
+		print("Y NOW__________")
+
 		print(y)
 
 		#if(min(br - xk*aa)>= 0):
 		#	br = br - xk*aa
 		#	x[ii-1] = x[ii-1] + xk
-
+x=x/K
+print("----------------------------------")
+print(x)
+print(y)
 
