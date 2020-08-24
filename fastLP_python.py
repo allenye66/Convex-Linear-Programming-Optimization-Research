@@ -37,8 +37,7 @@ for k in range(K):
 		print("ii-----", ii)
 		A = np.array(A)
 		aa = A[:,ii-1]
-		print("aa-----", aa)
-
+		print("aa:", aa)
 		xk = (np.sign(c[ii-1] - np.transpose(aa)*y)+1)/2
 		print("XK NOW__________")
 		print(xk)
