@@ -107,7 +107,7 @@ function [x,y] = fastLP(A,b,c,K);
 
    disp(size(xk*aa))
    
-   y=max(0,y+step*(xk*aa-d)); 
+   y=max(0,y+step*(xk*aa-d')); 
    disp("NEW SIZE OF Y MATRIX AFTER THIS STEP%%%%%%%%%%%%%%%%%%%%%")
    disp(size(y))
    %

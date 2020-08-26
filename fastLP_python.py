@@ -41,7 +41,7 @@ for k in range(K):
 		xk = (np.sign(c[ii-1] - np.transpose(aa)*y)+1)/2
 		print("XK NOW__________")
 		print(xk)
-		y = np.maximum(0, y+step*(xk*aa-d))
+		y = np.maximum(0, y+step*(xk*aa-np.transpose(d)))
 		print("Y NOW__________")
 
 		print(y)
