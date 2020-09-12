@@ -8,7 +8,7 @@ cvx_begin
     variables x(n);
     maximize(c' * x);
     subject to
-        A*x <= b;
+        A*x <= b';
         0<=x<=1;
 cvx_end
 
