@@ -25,9 +25,12 @@ A = (upper-lower).*rand(m,n) + lower;
 %need to separate it into half positive half negative
 %make two seperate vecotrs and combine them
 
+b_lower = 500;
+b_upper = 5000;
 
-
-b = rand(1,m);
+b = (b_upper-b_lower).*rand(1, m) + b_lower; 
+b_range = [min(b) max(b)]
+disp(b_range)
 % around 1000's 
 % b = [1000, 3000, 1500, 2000, 2200...]
 %change b to o(1) VECTOR
