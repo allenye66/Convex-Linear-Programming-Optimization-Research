@@ -1,12 +1,11 @@
-function [] = compare(offline_output, online_output, c_vector)
-[s1, s2] = size(offline_output)
-offline = 0
-online = 0
-for k = 1:s1;
-    offline = offline + offline_output(k)*c_vector(k)
-    online = online + online_output(k)*c_vector(k)
-end
-disp("---------------------------")
+function [] = compare(offline_output, online_output)
+
+n = 1e5;
+c = rand(n, 1);
+
+offline = c'*offline_output;
+online = c'*online_output;
+
 disp(offline)
 disp(online)
 if online>offline;
