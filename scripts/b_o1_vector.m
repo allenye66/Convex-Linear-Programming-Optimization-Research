@@ -15,13 +15,31 @@ n = 1e6;
 %in future, try if random number to indicate how many positive parts and
 %negative
 
+%negative = -1;
+%lower = 0;
+%upper = 1;
+%half the columns should have the same negative columns at the same places(0 and -1)
+%when testing this b(0) vector, stick with K = 1 
 
-lower = -1;
-upper = 1;
+%so at first, all 1000000 columns are positive
 
-c = (upper-lower).*rand(n,1) + lower;
+%negative_cols = zeros(1, n/2)
 
-A = (upper-lower).*rand(m,n) + lower;
+
+%c = (upper-lower).*rand(n,1) + lower;
+c = rand(n,1)
+%A = (upper-lower).*rand(m,n) + lower;
+
+%A1 = (lower-negative).*rand(m,n/2) + lower;
+%A2 = (upper-lower).*rand(m,n/2) + lower;
+%A = horzcat(A1,A2);
+
+A1 = rand(m,n/2)*-1;
+A2 = rand(m,n/2);
+A = horzcat(A1,A2);
+
+
+
 %need to separate it into half positive half negative
 %make two seperate vecotrs and combine them
 
@@ -30,7 +48,9 @@ b_upper = 5000;
 
 b = (b_upper-b_lower).*rand(1, m) + b_lower; 
 b_range = [min(b) max(b)]
-disp(b_range)
+
+
+%disp(b_range)
 % around 1000's 
 % b = [1000, 3000, 1500, 2000, 2200...]
 %change b to o(1) VECTOR
@@ -46,3 +66,9 @@ disp(b_range)
 %run the online solution with new input
 %run the offline solution with new input
 %compare similarity
+
+
+
+
+
+
