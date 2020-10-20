@@ -1,5 +1,5 @@
 m = 1e2;
-n = 1e6;
+n = 1e5;
 
 
 %n is 10^6
@@ -37,6 +37,9 @@ c = rand(n,1)
 A1 = rand(m,n/2)*-1;
 A2 = rand(m,n/2);
 A = horzcat(A1,A2);
+
+%randomly shuffle the columns
+A = A(:,randperm(size(A,2)))
 
 
 
