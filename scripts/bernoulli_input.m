@@ -3,7 +3,6 @@ n = 1e5;
 %m = 3
 %n = 20
 
-c = rand(n,1)
 
 %probability of success
 p=0.6;
@@ -19,9 +18,13 @@ A_neg = A_neg*-1
 
 %combine positive and negative matrix
 A = horzcat(A_pos,A_neg);
+A = A(:,randperm(size(A,2)))
+
 
 
 b = ones(1,m)
+
+c = sum(A)'
 
 
 

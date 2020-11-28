@@ -27,7 +27,7 @@ n = 1e5;
 
 
 %c = (upper-lower).*rand(n,1) + lower;
-c = rand(n,1)
+%c = rand(n,1)
 %A = (upper-lower).*rand(m,n) + lower;
 
 %A1 = (lower-negative).*rand(m,n/2) + lower;
@@ -46,12 +46,13 @@ A = A(:,randperm(size(A,2)))
 %need to separate it into half positive half negative
 %make two seperate vecotrs and combine them
 
-b_lower = 500;
-b_upper = 5000;
+b_lower = 100;
+b_upper = 200;
 
 b = (b_upper-b_lower).*rand(1, m) + b_lower; 
 b_range = [min(b) max(b)]
 
+c = sum(A)'
 
 %disp(b_range)
 % around 1000's 
