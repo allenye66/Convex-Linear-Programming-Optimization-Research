@@ -1,8 +1,8 @@
 # LP-Optimization
 
-#To view my project, please visit https://docs.google.com/document/d/11l84jfOrdeC-aq7lpM8khMv-8WArKiEl2tBjuiWhOBo/edit#heading=h.g6bx6qe5q6e3. Contents will be translated onto LaTeX soon.
+# To view my project, please visit https://docs.google.com/document/d/11l84jfOrdeC-aq7lpM8khMv-8WArKiEl2tBjuiWhOBo/edit#heading=h.g6bx6qe5q6e3. Contents will be translated onto LaTeX soon.
 
-Introduction:
+# Introduction:
 
 In this project, we evaluated the accuracy of a fast online linear algorithm by comparing it to the offline algorithm using different sets of input data. 
 
@@ -15,11 +15,11 @@ We defined a set of input data using different distribution samples and complexi
 
 One important note is that for the fast online algorithm, it normally requires the b-vector to be O(n) complexity and very large. However, we also experiment with a “balanced” a-vector which allows us to use a b-vector with the O(1) complexity.
 
-Results and methods:
+# Results and methods:
 
 Please view in linked document.
 
-Conclusion:
+# Conclusion:
 
 From the data, it is clear that our fast online linear programming algorithm performs exceptionally well under all the types of testing data. In each case, the approximate solution was very similar to the true solution.
 
