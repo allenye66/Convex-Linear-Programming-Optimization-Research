@@ -51,6 +51,7 @@ b_upper = 200;
 
 b = (b_upper-b_lower).*rand(1, m) + b_lower; 
 b_range = [min(b) max(b)]
+c = zeros(n, 1);
 
 c = sum(A)'/m + randn(size(c))
 
@@ -70,7 +71,6 @@ c = sum(A)'/m + randn(size(c))
 %run the online solution with new input
 %run the offline solution with new input
 %compare similarity
-c1
 
 
 

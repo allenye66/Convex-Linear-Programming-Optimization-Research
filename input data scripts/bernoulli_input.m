@@ -23,6 +23,8 @@ A = A(:,randperm(size(A,2)))
 
 
 b = ones(1,m)
+c = zeros(n, 1);
+
 
 c = sum(A)'/m + randn(size(c))
 
