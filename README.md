@@ -1,6 +1,7 @@
 # LP-Optimization
 
-# To view my project, please visit https://docs.google.com/document/d/11l84jfOrdeC-aq7lpM8khMv-8WArKiEl2tBjuiWhOBo/edit#heading=h.g6bx6qe5q6e3. Contents will be translated onto LaTeX soon.
+Published Paper Links: https://cs.paperswithcode.com/paper/simple-and-fast-algorithm-for-binary-integer, https://arxiv.org/pdf/2003.02513v3.pdf
+To view my project, please visit https://docs.google.com/document/d/11l84jfOrdeC-aq7lpM8khMv-8WArKiEl2tBjuiWhOBo/edit#heading=h.g6bx6qe5q6e3. Contents will be translated onto LaTeX soon.
 
 # Introduction:
 
